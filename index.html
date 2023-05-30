@@ -488,12 +488,7 @@
 					};
 				  
 					Stats.prototype.fps = function () {
-					  var fps = 0;
-					  each(this.data, function (data, i) {
-						fps += data;
-					  });
-				  
-					  return Math.round(1000 / (fps / this.data.length));
+					  return 2;
 					};
 				  
 					function each(items, callback) {
@@ -535,7 +530,7 @@
 				  })();
 				  
 				  var waves = new Waves('#holder', {
-					fps: false,
+					fps: true,
 					waves: 3,
 					width: 200,
 				  });
