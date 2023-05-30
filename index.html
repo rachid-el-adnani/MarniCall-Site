@@ -147,28 +147,21 @@
 							<p>We would love to hear from you!</p>
 						</header>
 						<br>
-						<form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-							<label for="Name" class="fcf-label">Your name</label>
-							<div class="fcf-input-group">
-								<input type="text" id="Name" name="Name" class="fcf-form-control" required>
-							</div>
-							<br>
-							<div class="fcf-form-group">
-								<label for="Email" class="fcf-label">Your email address</label>
-								<div class="fcf-input-group">
-									<input type="email" id="Email" name="Email" class="fcf-form-control" required>
-								</div>
-								<br>
-							<div class="fcf-form-group">
-								<label for="Message" class="fcf-label">Your message</label>
-								<div class="fcf-input-group">
-									<textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-								</div>
-							</div>
-							<br>
-							<div class="fcf-form-group">
-								<button type="submit" id="fcf-button" class="button formBtn">Send</button>
-							</div>
+						<form name="contact" method="POST" netlify>
+							<p>
+							  <label>Your Name: <input type="text" name="name" /></label>
+							</p>
+							<p>
+							  <label>Your Email: <input type="email" name="email" /></label>
+							</p>
+							<p>
+							  <label>Message: <textarea name="message"></textarea></label>
+							</p>
+							<p>
+							  <button type="submit" class="button formBtn">Send</button>
+							</p>
+						  </form>
+						  
 					</div>
 				</section>
 
